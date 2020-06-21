@@ -9,14 +9,20 @@
   });
 </script>
 
-<style>
-
-</style>
-
 <main>
   {#each data.entries as item}
     <div>
-      <p>{item.title}</p>
+      <h1>{item.title}</h1>
+      <p>
+        {@html item.body}
+      </p>
     </div>
   {/each}
 </main>
+
+<style>
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+</style>
