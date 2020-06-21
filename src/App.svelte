@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import snarkdown from "snarkdown";
   const apiURL = "api/data.json";
   let data = [];
 
@@ -14,7 +15,7 @@
     <section>
       <h1>{item.title}</h1>
       <p>
-        {@html item.body}
+        {@html snarkdown(item.body)}
       </p>
     </section>
   {/each}
