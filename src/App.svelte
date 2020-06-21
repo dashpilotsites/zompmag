@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { fade } from "svelte/transition";
   import marked from "marked";
   const apiURL = "https://zompmag-nu.vercel.app/api/data.json";
   let data = [];
@@ -19,7 +20,7 @@
 </header>
 <main>
   {#each data.entries as item}
-    <section>
+    <section transition:fade>
       <div class="content">
         <h1>{item.title}</h1>
         <p>
