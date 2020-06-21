@@ -1,3 +1,11 @@
 config:
   path: "public/api"
   siteurl: ""
+layouts:
+  - name: posts
+    fields: 
+    - {name: "subtitle", type: "txt"}
+    - {name: "summary", type: "txt"}
+  
+   
+  
