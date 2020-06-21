@@ -11,12 +11,12 @@
 
 <main>
   {#each data.entries as item}
-    <div>
+    <section>
       <h1>{item.title}</h1>
       <p>
         {@html item.body}
       </p>
-    </div>
+    </section>
   {/each}
 </main>
 
