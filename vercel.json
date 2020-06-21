@@ -1,9 +1,0 @@
-{
-    "routes": [{
-        "src": "/public/api/data.json",
-        "headers": {
-            "Access-Control-Allow-Origin": "*"
-        },
-        "continue": true
-    }]
-}
