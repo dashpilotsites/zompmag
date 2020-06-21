@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
-  import snarkdown from "snarkdown";
-  const apiURL = "api/data.json";
+  import marked from "marked";
+  const apiURL = "https://zompmag-nu.vercel.app/api/data.json";
   let data = [];
 
   onMount(async function() {
@@ -15,7 +15,7 @@
     <section>
       <h1>{item.title}</h1>
       <p>
-        {@html snarkdown(item.body)}
+        {@html marked(item.body)}
       </p>
     </section>
   {/each}
