@@ -1,16 +1,18 @@
 {
-  "config": {
-    "path": "public/content",
-    "siteurl": ""
-  },
-  "layouts": [{
-    "name": "posts",
-    "fields": [{
-      "name": "subtitle",
-      "type": "txt"
-    }, {
-      "name": "summary",
-      "type": "txt"
+    "config": {
+        "path": "public/content",
+        "siteurl": ""
+    },
+    "layouts": [{
+        "name": "posts",
+        "fields": [{
+            "name": "subtitle",
+            "description": "subtitle",
+            "type": "text"
+        }, {
+            "name": "summary",
+            "description": "summary",
+            "type": "textarea"
+        }]
     }]
-  }]
 }
