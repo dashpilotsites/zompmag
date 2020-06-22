@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import { fade } from "svelte/transition";
   import marked from "marked";
-  const apiURL = "https://zompmag-nu.vercel.app/api/data.json";
+  const apiURL = "https://zompmag-nu.vercel.app/content/data.json";
   let data = [];
   data.entries = [];
 
