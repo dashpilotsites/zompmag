@@ -1,0 +1,16 @@
+{
+  "config": {
+    "path": "public/content",
+    "siteurl": ""
+  },
+  "layouts": [{
+    "name": "posts",
+    "fields": [{
+      "name": "subtitle",
+      "type": "txt"
+    }, {
+      "name": "summary",
+      "type": "txt"
+    }]
+  }]
+}
